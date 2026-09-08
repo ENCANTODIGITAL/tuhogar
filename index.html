@@ -185,7 +185,7 @@
             background: var(--navy-hover);
         }
 
-        /* --- VENTANA EMERGENTE (ESTRUCTURA CORREGIDA PARA MUCHAS FOTOS) --- */
+        /* Modal / Ventana Emergente */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -238,7 +238,6 @@
             align-items: start;
         }
 
-        /* Solución clave: Evita que la columna izquierda se expanda por muchas fotos */
         .modal-grid > div {
             min-width: 0;
         }
@@ -265,14 +264,13 @@
             cursor: zoom-in;
         }
 
-        /* Tira de miniaturas corregida con scroll contenido */
         .gallery-thumbs {
             display: flex;
             gap: 8px;
             margin-top: 10px;
             overflow-x: auto;
             padding-bottom: 6px;
-            max-width: 100%; /* Limita las 17 fotos dentro del ancho permitido */
+            max-width: 100%;
         }
 
         .gallery-thumbs img {
@@ -329,7 +327,7 @@
             color: #4A5568;
         }
 
-        /* MODAL DE ZOOM PANTALLA COMPLETA */
+        /* Modal Zoom */
         .zoom-overlay {
             position: fixed;
             top: 0;
@@ -355,7 +353,6 @@
             border-radius: 4px;
         }
 
-        /* Footer */
         footer {
             max-width: 1140px;
             margin: 50px auto 0 auto;
@@ -439,22 +436,156 @@
                     </div>
                 </div>
             </div>
+
+            <!-- PROPIEDAD 4 -->
+            <div class="card" onclick="openModal('prop4')">
+                <div class="card-img-container">
+                    <span class="tag-status">En Venta</span>
+                    <img src="fotos/pro/pro1.jpg" alt="Propiedad 4">
+                </div>
+                <div class="card-content">
+                    <div class="price">USD $482,000</div>
+                    <div class="title">¡GRAN OPORTUNIDAD! Terreno Industrial de 877 m² en Puente Piedra</div>
+                    <ul class="features">
+                        <li>• Área total: 877.19 m² | Zonificación Industrial</li>
+                        <li>• A 1 min de la Comisaría La Ensenada y Pan. Norte</li>
+                    </ul>
+                    <div class="card-action">
+                        <button class="btn-details">Ver fotos y detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROPIEDAD 5 -->
+            <div class="card" onclick="openModal('prop5')">
+                <div class="card-img-container">
+                    <span class="tag-status">Remodelado</span>
+                    <img src="fotos/molina-salamanca/1s.jpg" alt="Propiedad 5">
+                </div>
+                <div class="card-content">
+                    <div class="price">S/ 290,000</div>
+                    <div class="title">DEPARTAMENTO REMODELADO EN SALAMANCA (4.º PISO)</div>
+                    <ul class="features">
+                        <li>• Amplia sala–comedor con balcón y vista externa</li>
+                        <li>• 3 habitaciones + 2 baños</li>
+                        <li>• Cocina amplia y funcional</li>
+                    </ul>
+                    <div class="card-action">
+                        <button class="btn-details">Ver fotos y detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROPIEDAD 6 -->
+            <div class="card" onclick="openModal('prop6')">
+                <div class="card-img-container">
+                    <span class="tag-status">En Venta</span>
+                    <img src="fotos/miraflores/1m.jpg" alt="Triplex Miraflores">
+                </div>
+                <div class="card-content">
+                    <div class="price">USD $228,000</div>
+                    <div class="title">Exclusivo Triplex en Calle Schell – Miraflores (117 m²)</div>
+                    <ul class="features">
+                        <li>• 3 dormitorios amplios + Estudio + Terraza</li>
+                        <li>• 2 baños (Jacuzzi en mármol en dpto. principal)</li>
+                        <li>• Incluye estacionamiento y seguridad 24/7</li>
+                    </ul>
+                    <div class="card-action">
+                        <button class="btn-details">Ver fotos y detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROPIEDAD 7 -->
+            <div class="card" onclick="openModal('prop7')">
+                <div class="card-img-container">
+                    <span class="tag-status">Disponible</span>
+                    <img src="fotos/comas/comas.jpg" alt="Propiedad 7">
+                </div>
+                <div class="card-content">
+                    <div class="price">USD $230,000</div>
+                    <div class="title"> ¡OPORTUNIDAD DE INVERSIÓN EN COMAS!</div>
+                    <ul class="features">
+                        <li>• 190m2 y area contruida de 510 m2</li>
+                        <li>• A la altura de Av. Túpac Amaru con Belaunde</li>
+                        <li>• Excelente ubicación + frente a parque + amplio metraje construido. </li>
+                    </ul>
+                    <div class="card-action">
+                        <button class="btn-details">Ver fotos y detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROPIEDAD 8 
+            <div class="card" onclick="openModal('prop8')">
+                <div class="card-img-container">
+                    <span class="tag-status">Disponible</span>
+                    <img src="fotos/propiedad8/1.jpg" alt="Propiedad 8">
+                </div>
+                <div class="card-content">
+                    <div class="price">USD $120,000</div>
+                    <div class="title">Propiedad 8</div>
+                    <ul class="features">
+                        <li>• Característica 1</li>
+                        <li>• Característica 2</li>
+                    </ul>
+                    <div class="card-action">
+                        <button class="btn-details">Ver fotos y detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            PROPIEDAD 9 
+            <div class="card" onclick="openModal('prop9')">
+                <div class="card-img-container">
+                    <span class="tag-status">Disponible</span>
+                    <img src="fotos/propiedad9/1.jpg" alt="Propiedad 9">
+                </div>
+                <div class="card-content">
+                    <div class="price">USD $130,000</div>
+                    <div class="title">Propiedad 9</div>
+                    <ul class="features">
+                        <li>• Característica 1</li>
+                        <li>• Característica 2</li>
+                    </ul>
+                    <div class="card-action">
+                        <button class="btn-details">Ver fotos y detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            PROPIEDAD 10 
+            <div class="card" onclick="openModal('prop10')">
+                <div class="card-img-container">
+                    <span class="tag-status">Disponible</span>
+                    <img src="fotos/propiedad10/1.jpg" alt="Propiedad 10">
+                </div>
+                <div class="card-content">
+                    <div class="price">USD $140,000</div>
+                    <div class="title">Propiedad 10</div>
+                    <ul class="features">
+                        <li>• Característica 1</li>
+                        <li>• Característica 2</li>
+                    </ul>
+                    <div class="card-action">
+                        <button class="btn-details">Ver fotos y detalles</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </div>  -->
 
     <!-- VENTANA EMERGENTE -->
     <div class="modal-overlay" id="propertyModal">
         <div class="modal-container">
             <button class="modal-close" onclick="closeModal()">&times;</button>
             <div class="modal-grid">
-                <!-- Columna Izquierda: Galería de fotos -->
                 <div>
                     <div class="main-img-container">
                         <img id="modalMainImg" class="gallery-main-img" src="" alt="Foto principal" onclick="openZoom(this.src)">
                     </div>
                     <div class="gallery-thumbs" id="modalThumbs"></div>
                 </div>
-                <!-- Columna Derecha: Detalles + Botón WhatsApp -->
                 <div class="modal-info">
                     <div class="modal-price" id="modalPrice"></div>
                     <div class="modal-title" id="modalTitle"></div>
@@ -465,7 +596,7 @@
         </div>
     </div>
 
-    <!-- MODAL DE ZOOM PANTALLA COMPLETA -->
+    <!-- MODAL ZOOM -->
     <div class="zoom-overlay" id="zoomModal" onclick="closeZoom()">
         <img id="zoomedImg" class="zoom-img" src="" alt="Zoom foto">
     </div>
@@ -485,8 +616,7 @@
                     'fotos/puentepiedra/vistapanamericana.jpg',
                     'fotos/puentepiedra/parque.jpg',
                     'fotos/puentepiedra/localcomercial.jpg',
-                    'fotos/puentepiedra/comedor.jpg',
-                    
+                    'fotos/puentepiedra/comedor.jpg'
                 ],
                 description: `
                     <h4>Distribución y Beneficios:</h4>
@@ -556,7 +686,6 @@
                     'fotos/sanmartin-vicki/18.jpg',
                     'fotos/sanmartin-vicki/19.jpg',
                     'fotos/sanmartin-vicki/20.jpg'
-                    
                 ],
                 description: `
                     <h4>Detalle de Distribución:</h4>
@@ -568,6 +697,143 @@
                     </ul>
                 `,
                 wspUrl: 'https://wa.me/51900734869?text=Hola,%20deseo%20información%20de%20la%20casa%20familiar'
+            },
+            'prop4': {
+                price: 'USD $482,000',
+                title: '¡GRAN OPORTUNIDAD! Terreno Industrial de 877 m² en Puente Piedra',
+                images: [
+                    'fotos/pro/pro1.jpg',
+                    'fotos/pro/pro2.jpg',
+                    'fotos/pro/pro3.jpg',
+                    'fotos/pro/pro4.jpg',
+                    'fotos/pro/pro5.jpg',
+                    'fotos/pro/pro6.jpg',
+                    'fotos/pro/pro7.jpg',
+                    'fotos/pro/pro8.jpg',
+                    'fotos/pro/pro9.jpg',
+                    'fotos/pro/pro11.jpg',
+                    'fotos/pro/pro12.jpg',
+                    'fotos/pro/pro13.jpg',
+                    'fotos/pro/pro14.jpg'
+                ],
+                description: `
+                    <h4>Ubicación Estratégica:</h4>
+                    <ul>
+                        <li>• Calle Los Copihues – Puente Piedra</li>
+                        <li>• A solo 1 min de la Comisaría La Ensenada</li>
+                        <li>• Acceso directo a la Panamericana Norte y vías principales, ¡perfecto para transporte de carga y logística!</li>
+                    </ul>
+                    <br>
+                    <h4>Ideal para:</h4>
+                    <ul>
+                        <li>• Centros de distribución y almacenamiento</li>
+                        <li>• Empresas industriales en expansión</li>
+                        <li>• Talleres mecánicos, manufactura liviana y más</li>
+                    </ul>
+                    <br>
+                    <p><i>¡No dejes pasar esta oportunidad en una zona de alto crecimiento! Contáctame ahora para agendar tu visita.</i></p>
+                `,
+                wspUrl: 'https://wa.me/51900734869?text=Hola,%20deseo%20información%20del%20terreno%20industrial'
+            },
+            'prop5': {
+                price: 'S/ 290,000',
+                title: 'DEPARTAMENTO REMODELADO EN SALAMANCA (4.º PISO)',
+                images: [
+                    'fotos/molina-salamanca/1s.jpg',
+                    'fotos/molina-salamanca/s2.jpg',
+                    'fotos/molina-salamanca/s3.jpg',
+                    'fotos/molina-salamanca/s4.jpg',
+                    'fotos/molina-salamanca/s5.jpg',
+                    'fotos/molina-salamanca/s6.jpg',
+                    'fotos/molina-salamanca/s7.jpg',
+                    'fotos/molina-salamanca/s8.jpg',
+                    'fotos/molina-salamanca/s9.jpg'
+                ],
+                description: `
+                    <h4>Características del Departamento:</h4>
+                    <ul>
+                        <li>• <b>Piso:</b> 4.º Piso (Listo para mudarse)</li>
+                        <li>• <b>Ambientes:</b> Amplia sala–comedor con balcón y vista externa.</li>
+                        <li>• <b>Distribución:</b> 3 habitaciones + 2 baños.</li>
+                        <li>• <b>Cocina:</b> Amplia y funcional.</li>
+                    </ul>
+                    <br>
+                    <h4>Ubicación Estratégica:</h4>
+                    <ul>
+                        <li>• Ubicado en Grumete Medina, Salamanca.</li>
+                        <li>• A ½ cuadra de la Av. Benjamín Franklin (rodeado de comercios y servicios).</li>
+                        <li>• A 1 cuadra del Parque de los Anillos.</li>
+                        <li>• A ½ cuadra del Colegio Grumete Medina.</li>
+                    </ul>
+                    <br>
+                    <p><i>Escríbeme y agenda tu visita. ¡Puede ser tu próximo hogar!</i></p>
+                `,
+                wspUrl: 'https://wa.me/51900734869?text=Hola,%20deseo%20información%20del%20departamento%20en%20Salamanca%20del%204to%20piso'
+            },
+            'prop6': {
+                price: 'USD $228,000',
+                title: 'DEPARTAMENTO TRIPLEX EN MIRAFLORES (117 m² + Estacionamiento)',
+                images: [
+                    'fotos/miraflores/1m.jpg',
+                    'fotos/miraflores/m2.jpg',
+                    'fotos/miraflores/m3.jpg',
+                    'fotos/miraflores/m4.jpg',
+                    'fotos/miraflores/m5.jpg',
+                    'fotos/miraflores/m6.jpg',
+                    'fotos/miraflores/m7.jpg',
+                    'fotos/miraflores/m8.jpg',
+                    'fotos/miraflores/m9.jpg',
+                    'fotos/miraflores/m10.jpg',
+                    'fotos/miraflores/m11.jpg',
+                    'fotos/miraflores/m12.jpg'
+                ],
+                description: `
+                    <h4>Distribución por Niveles:</h4>
+                    <ul>
+                        <li>• <b>1.er Nivel:</b> Amplia terraza, sala-comedor, cocina con encimeras de granito y muebles en acabado poliuretano, lavandería y baño de visita.</li>
+                        <li>• <b>2.º Nivel:</b> Dormitorio principal con clóset, baño con tina de hidromasaje y encimera de mármol, y estudio con muebles altos y bajos.</li>
+                        <li>• <b>3.er Nivel:</b> 2 dormitorios amplios con clóset y baño completo con encimera de granito.</li>
+                    </ul>
+                    <br>
+                    <h4>Detalles del Inmueble y Edificio:</h4>
+                    <ul>
+                        <li>• <b>Ubicación:</b> Calle Schell 644, Miraflores (del 1.er al 3.er piso).</li>
+                        <li>• <b>Área:</b> 117 m² + Estacionamiento incluido.</li>
+                        <li>• <b>Seguridad:</b> Condominio seguro con vigilancia y conserjería 24/7.</li>
+                        <li>• <b>Áreas Comunes:</b> Zona común ubicada en el piso 8.</li>
+                    </ul>
+                    <br>
+                    <p><i>Visitas únicamente programadas. ¡Contáctame para agendar tu cita!</i></p>
+                `,
+                wspUrl: 'https://wa.me/51900734869?text=Hola,%20deseo%20información%20del%20triplex%20en%20Miraflores%20calle%20Schell'
+            },
+            'prop7': {
+                price: 'USD $110,000',
+                title: 'Propiedad 7',
+                images: ['fotos/propiedad7/1.jpg'],
+                description: '<h4>Descripción:</h4><p>Detalles...</p>',
+                wspUrl: 'https://wa.me/51900734869?text=Hola,%20deseo%20información%20de%20propiedad%207'
+            },
+            'prop8': {
+                price: 'USD $120,000',
+                title: 'Propiedad 8',
+                images: ['fotos/propiedad8/1.jpg'],
+                description: '<h4>Descripción:</h4><p>Detalles...</p>',
+                wspUrl: 'https://wa.me/51900734869?text=Hola,%20deseo%20información%20de%20propiedad%208'
+            },
+            'prop9': {
+                price: 'USD $130,000',
+                title: 'Propiedad 9',
+                images: ['fotos/propiedad9/1.jpg'],
+                description: '<h4>Descripción:</h4><p>Detalles...</p>',
+                wspUrl: 'https://wa.me/51900734869?text=Hola,%20deseo%20información%20de%20propiedad%209'
+            },
+            'prop10': {
+                price: 'USD $140,000',
+                title: 'Propiedad 10',
+                images: ['fotos/propiedad10/1.jpg'],
+                description: '<h4>Descripción:</h4><p>Detalles...</p>',
+                wspUrl: 'https://wa.me/51900734869?text=Hola,%20deseo%20información%20de%20propiedad%2010'
             }
         };
 
@@ -585,7 +851,7 @@
             
             thumbsContainer.innerHTML = '';
             
-            if (data.images.length > 0) {
+            if (data.images && data.images.length > 0) {
                 mainImg.src = data.images[0];
 
                 data.images.forEach((imgUrl, index) => {
