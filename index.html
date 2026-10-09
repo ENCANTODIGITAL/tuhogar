@@ -32,14 +32,21 @@
         }
 
         /* Encabezado Principal */
+
         header {
-            background-color: var(--navy-primary);
+            /* El gradiente oscuro translúcido se mezcla con la imagen para resaltar el texto */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('fotos/PAGE/portada.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: #FFFFFF;
             text-align: center;
-            padding: 50px 20px;
+            padding: 80px 20px;
             margin-bottom: 30px;
         }
 
+
+        
         header h1 {
             font-size: 2.2rem;
             font-weight: 700;
@@ -371,6 +378,16 @@
             border-top: 1px solid var(--border-color);
             padding-top: 20px;
         }
+@media (min-width: 740px) {
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('fotos/PAGE/portadapc.jpg');
+        /* "center top" empuja la imagen hacia abajo para que se vea la parte superior */
+        background-position: center top; 
+        /* Aumentamos el padding vertical para que el header sea más alto y entre toda tu cabeza */
+        padding: 120px 120px 20px  40px; 
+    }
+}
+
     </style>
 </head>
 <body>
@@ -816,7 +833,7 @@
     </footer>
 
     <script>
-        const propertiesData = {
+       const propertiesData = {
             'prop1': {
                 price: 'USD $240,000',
                 title: 'Edificio de 5 Pisos: Local Comercial + 4 Dptos. | Zona Segura',
@@ -1076,7 +1093,7 @@
                     'fotos/san-isidro/16.jpg', 'fotos/san-isidro/17.jpg', 'fotos/san-isidro/18.jpg',
                     'fotos/san-isidro/19.jpg', 'fotos/san-isidro/20.jpg', 'fotos/san-isidro/21.jpg',
                     'fotos/san-isidro/22.jpg', 'fotos/san-isidro/23.jpg', 'fotos/san-isidro/24.jpg',
-                    'fotos/san-isidro/25.jpg', 'fotos/san-isidro/26.jpg', 'fotos/san-isidro/27.jpg'
+                    'fotos/san-isidro/25.jpg', 'fotos/san-isidro/26.jpg', 'fotos/sanisidro/27.jpg'
                 ],
                 mapUrl: 'https://maps.app.goo.gl/iq7L8Y8J3PQupXck8',
                 description: `
@@ -1089,28 +1106,14 @@
                 price: 'USD $205,000',
                 title: 'Departamento Primer Piso, Amplio y Frente a Parque | Surquillo - Miraflores',
                 images: [
-                    'fotos/surquillo/1.jpg',
-                    'fotos/surquillo/2.jpg',
-                    'fotos/surquillo/3.jpg',
-                    'fotos/surquillo/4.jpg',
-                    'fotos/surquillo/5.jpg',
-                    'fotos/surquillo/6.jpg',
-                    'fotos/surquillo/7.jpg',
-                    'fotos/surquillo/8.jpg',
-                    'fotos/surquillo/9.jpg',
-                    'fotos/surquillo/10.jpg',
-                    'fotos/surquillo/11.jpg',
-                    'fotos/surquillo/12.jpg',
-                    'fotos/surquillo/13.jpg',
-                    'fotos/surquillo/14.jpg',
-                    'fotos/surquillo/15.jpg',
-                    'fotos/surquillo/16.jpg',
-                    'fotos/surquillo/17.jpg',
-                    'fotos/surquillo/18.jpg',
-                    
-                    
+                    'fotos/surquillo/1.jpg', 'fotos/surquillo/2.jpg', 'fotos/surquillo/3.jpg',
+                    'fotos/surquillo/4.jpg', 'fotos/surquillo/5.jpg', 'fotos/surquillo/6.jpg',
+                    'fotos/surquillo/7.jpg', 'fotos/surquillo/8.jpg', 'fotos/surquillo/9.jpg',
+                    'fotos/surquillo/10.jpg', 'fotos/surquillo/11.jpg', 'fotos/surquillo/12.jpg',
+                    'fotos/surquillo/13.jpg', 'fotos/surquillo/14.jpg', 'fotos/surquillo/15.jpg',
+                    'fotos/surquillo/16.jpg', 'fotos/surquillo/17.jpg', 'fotos/surquillo/18.jpg'
                 ],
-                mapUrl: '', // Puedes agregar el enlace de Google Maps si lo deseas
+                mapUrl: '',
                 description: `
                     <h4>Características Principales:</h4>
                     <ul>
@@ -1135,25 +1138,14 @@
                 price: 'USD $64,000',
                 title: '¡Oportunidad de Inversión! Departamento de 64 m² en Cercado de Lima',
                 images: [
-                    'fotos/cercadodelima/1.jpg',
-                    'fotos/cercadodelima/2.jpg',
-                    'fotos/cercadodelima/3.jpg',
-                    'fotos/cercadodelima/4.jpg',
-                    'fotos/cercadodelima/5.jpg',
-                    'fotos/cercadodelima/6.jpg',
-                    'fotos/cercadodelima/7.jpg',
-                    'fotos/cercadodelima/8.jpg',
-                    'fotos/cercadodelima/9.jpg',
-                    'fotos/cercadodelima/10.jpg',
-                    'fotos/cercadodelima/11.jpg',
-                    'fotos/cercadodelima/12.jpg',
-                    'fotos/cercadodelima/13.jpg',
-                    'fotos/cercadodelima/14.jpg',
-                    'fotos/cercadodelima/15.jpg',
-                    'fotos/cercadodelima/16.jpg',
-                    
+                    'fotos/cercadodelima/1.jpg', 'fotos/cercadodelima/2.jpg', 'fotos/cercadodelima/3.jpg',
+                    'fotos/cercadodelima/4.jpg', 'fotos/cercadodelima/5.jpg', 'fotos/cercadodelima/6.jpg',
+                    'fotos/cercadodelima/7.jpg', 'fotos/cercadodelima/8.jpg', 'fotos/cercadodelima/9.jpg',
+                    'fotos/cercadodelima/10.jpg', 'fotos/cercadodelima/11.jpg', 'fotos/cercadodelima/12.jpg',
+                    'fotos/cercadodelima/13.jpg', 'fotos/cercadodelima/14.jpg', 'fotos/cercadodelima/15.jpg',
+                    'fotos/cercadodelima/16.jpg'
                 ],
-                mapUrl: '', // Puedes agregar aquí el enlace de Google Maps si lo deseas
+                mapUrl: '',
                 description: `
                     <h4>Ubicación Estratégica:</h4>
                     <p>Av. Argentina 5720 – Cercado de Lima. Frente a Ferreiros, en una zona de excelente conectividad y movimiento comercial.</p>
@@ -1169,7 +1161,7 @@
                     <p><i>¡Ideal para vivir o invertir! Contáctame para agendar una visita.</i></p>
                 `,
                 wspUrl: 'https://wa.me/51900734869?text=Hola,%20deseo%20información%20del%20departamento%20en%20Cercado%20de%20Lima%20Av%20Argentina'
-             },
+            },
             'prop13': { price: 'USD $000,000', title: 'Propiedad 13', images: ['fotos/propiedad13/1.jpg'], mapUrl: '', description: '<h4>Descripción:</h4><p>Detalles...</p>', wspUrl: 'https://wa.me/51900734869?text=Hola,%20información%20propiedad%2013' },
             'prop14': { price: 'USD $000,000', title: 'Propiedad 14', images: ['fotos/propiedad14/1.jpg'], mapUrl: '', description: '<h4>Descripción:</h4><p>Detalles...</p>', wspUrl: 'https://wa.me/51900734869?text=Hola,%20información%20propiedad%2014' },
             'prop15': { price: 'USD $000,000', title: 'Propiedad 15', images: ['fotos/propiedad15/1.jpg'], mapUrl: '', description: '<h4>Descripción:</h4><p>Detalles...</p>', wspUrl: 'https://wa.me/51900734869?text=Hola,%20información%20propiedad%2015' },
@@ -1180,6 +1172,9 @@
             'prop20': { price: 'USD $000,000', title: 'Propiedad 20', images: ['fotos/propiedad20/1.jpg'], mapUrl: '', description: '<h4>Descripción:</h4><p>Detalles...</p>', wspUrl: 'https://wa.me/51900734869?text=Hola,%20información%20propiedad%2020' }
         };
 
+        let currentImages = [];
+        let currentIndex = 0;
+
         function openModal(propKey) {
             const data = propertiesData[propKey];
             if (!data) return;
@@ -1189,7 +1184,6 @@
             document.getElementById('modalDescription').innerHTML = data.description;
             document.getElementById('modalWspBtn').href = data.wspUrl;
 
-            // Gestión del botón de ubicación (mapa)
             const mapBtn = document.getElementById('modalMapBtn');
             if (data.mapUrl && data.mapUrl.trim() !== '') {
                 mapBtn.href = data.mapUrl;
@@ -1198,31 +1192,58 @@
                 mapBtn.style.display = 'none';
             }
 
-            const mainImg = document.getElementById('modalMainImg');
-            const thumbsContainer = document.getElementById('modalThumbs');
-            
-            thumbsContainer.innerHTML = '';
-            
-            if (data.images && data.images.length > 0) {
-                mainImg.src = data.images[0];
+            currentImages = data.images || [];
+            currentIndex = 0;
 
-                data.images.forEach((imgUrl, index) => {
-                    const thumb = document.createElement('img');
-                    thumb.src = imgUrl;
-                    if (index === 0) thumb.classList.add('active-thumb');
-                    
-                    thumb.onclick = function() {
-                        mainImg.src = imgUrl;
-                        document.querySelectorAll('.gallery-thumbs img').forEach(t => t.classList.remove('active-thumb'));
-                        thumb.classList.add('active-thumb');
-                    };
-                    
-                    thumbsContainer.appendChild(thumb);
-                });
-            }
+            updateMainImage();
+            renderThumbs();
 
             document.getElementById('propertyModal').classList.add('active');
             document.body.style.overflow = 'hidden';
+        }
+
+        function updateMainImage() {
+            const mainImg = document.getElementById('modalMainImg');
+            const zoomedImg = document.getElementById('zoomedImg');
+            
+            if (currentImages.length > 0) {
+                const currentImgUrl = currentImages[currentIndex];
+                mainImg.src = currentImgUrl;
+                
+                // Si el zoom está abierto, también actualizamos su imagen en tiempo real
+                if (document.getElementById('zoomModal').classList.contains('active')) {
+                    zoomedImg.src = currentImgUrl;
+                }
+            }
+            
+            // Sincronizar y resaltar miniatura activa automáticamente
+            const thumbs = document.querySelectorAll('.gallery-thumbs img');
+            thumbs.forEach((thumb, idx) => {
+                if (idx === currentIndex) {
+                    thumb.classList.add('active-thumb');
+                    thumb.scrollIntoView({ behavior: 'smooth', inline: 'nearest', block: 'nearest' });
+                } else {
+                    thumb.classList.remove('active-thumb');
+                }
+            });
+        }
+
+        function renderThumbs() {
+            const thumbsContainer = document.getElementById('modalThumbs');
+            thumbsContainer.innerHTML = '';
+            
+            currentImages.forEach((imgUrl, index) => {
+                const thumb = document.createElement('img');
+                thumb.src = imgUrl;
+                if (index === currentIndex) thumb.classList.add('active-thumb');
+                
+                thumb.onclick = function() {
+                    currentIndex = index;
+                    updateMainImage();
+                };
+                
+                thumbsContainer.appendChild(thumb);
+            });
         }
 
         function closeModal() {
@@ -1239,6 +1260,79 @@
         function closeZoom() {
             document.getElementById('zoomModal').classList.remove('active');
         }
+
+        // --- GESTIÓN DE GESTOS TÁCTILES (SWIPE EN MÓVIL) PARA AMBOS MODALES ---
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function setupSwipe(elementId) {
+            const element = document.getElementById(elementId);
+            if (!element) return;
+
+            element.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            element.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleGesture();
+            }, { passive: true });
+        }
+
+        function handleGesture() {
+            const threshold = 50; 
+            
+            if (touchEndX < touchStartX - threshold) {
+                // Deslizar izquierda -> Siguiente foto
+                if (currentIndex < currentImages.length - 1) {
+                    currentIndex++;
+                    updateMainImage();
+                }
+            }
+            if (touchEndX > touchStartX + threshold) {
+                // Deslizar derecha -> Foto anterior
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateMainImage();
+                }
+            }
+        }
+
+        // Aplicamos el swipe tanto al contenedor de la foto del modal como al zoom completo
+        setupSwipe('propertyModal');
+        setupSwipe('zoomModal');
+        // --------------------------------------------------------------------
+
+        // --- GESTIÓN DE FLECHAS DEL TECLADO (PC) PARA AMBOS MODALES ---
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('propertyModal');
+            const zoomModal = document.getElementById('zoomModal');
+            
+            const isModalActive = modal.classList.contains('active');
+            const isZoomActive = zoomModal.classList.contains('active');
+
+            // Solo actúa si alguno de los dos modales está abierto
+            if (!isModalActive && !isZoomActive) return;
+
+            if (e.key === 'ArrowRight') {
+                if (currentIndex < currentImages.length - 1) {
+                    currentIndex++;
+                    updateMainImage();
+                }
+            } else if (e.key === 'ArrowLeft') {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateMainImage();
+                }
+            } else if (e.key === 'Escape') {
+                if (isZoomActive) {
+                    closeZoom(); // Si el zoom está abierto, cierra solo el zoom primero
+                } else if (isModalActive) {
+                    closeModal(); // Si solo está el modal, lo cierra
+                }
+            }
+        });
+        // -------------------------------------------------------------
 
         window.onclick = function(event) {
             const modal = document.getElementById('propertyModal');
